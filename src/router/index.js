@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import HelloWorld from '@/components/HelloWorld';
+import ContactUs from '@/components/ContactUs';
 
 Vue.use(Router);
 
@@ -11,5 +12,10 @@ export default new Router({
       name: 'HelloWorld',
       component: HelloWorld,
     },
+    {
+      path: "/contact-us",
+      name: "ContactUs",
+      component: ContactUs
+    }
   ],
 });
